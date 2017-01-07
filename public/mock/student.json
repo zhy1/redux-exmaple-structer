@@ -1,0 +1,17 @@
+{
+    "studentId": [ 1, 2, 3 ],
+    "teacher":"mirWang",
+    "student": [{
+        "id": 1,
+        "name": "lily"
+    }, {
+        "id": 2,
+        "name": "jack"
+    }, {
+        "id": 3,
+        "name": "john"
+    }],
+    "title":"this is title",
+    "username":"usernameA",
+    "password":"hover password"
+}
