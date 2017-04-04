@@ -2,7 +2,7 @@
  * Created by zy on 16/12/28.
  */
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { connect,dispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as studentAction from '../../actions/student';
 
@@ -10,12 +10,24 @@ import * as studentAction from '../../actions/student';
 
 class LoginApp extends Component {
 
+    constructor(props) {
+        super(props);
+    }
     componentWillMount() {
         //debugger;
-        const { actions } = this.props;
+/*        this.setState({
+            items: store.getState()
+        });*/
+        const { actions,dispatch } = this.props;
         actions.getStudent();
         //const { getStudent } = this.props;
         //getStudent();
+    }
+
+    onClick() {
+        console.info(123);
+        //dispatch(this.props);
+
     }
 
     render() {
@@ -23,6 +35,7 @@ class LoginApp extends Component {
             <div>
                 <input type="password" placeholder={this.props.username} />
                 <input type="password" placeholder={this.props.password} />
+                <button onClick={this.onClick}>click me</button>
             </div>
         );
     }
