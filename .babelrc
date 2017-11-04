@@ -1,4 +1,46 @@
 {
-    "plugins": ["transform-decorators-legacy"],
-    "presets": ["es2015", "react", "stage-0"]
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-es2015-classes",
+    "react-hot-loader/babel",
+    [
+      "captains-log",
+      {
+        "injectScope": true,
+        "injectVariableName": true,
+        "injectFileName": true,
+        "methods": [
+          "debug",
+          "info",
+          "log"
+        ],
+        "ignorePatterns": [
+          "node_modules",
+          "dll",
+          "flow",
+          "flow-typed",
+          "mocks",
+          "temp",
+          "build",
+          "app/main.dev.js",
+          "app/main.prod.js",
+          "app/dist",
+          "app/libs",
+          "release",
+          "app/styles",
+          "app/node_modules",
+          "app/images",
+          "app/i18n",
+          "app/main.prod.map.js",
+          "app/main.prod.map.js"
+        ]
+      }
+    ]
+  ]
 }

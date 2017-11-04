@@ -17,33 +17,30 @@
  */
 
 
-
-
 import React from 'react'
 //import { Router } from 'react-router';
-import { render } from 'react-dom'
+import {render} from 'react-dom'
 //import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'react-redux'
+import {Provider} from 'react-redux'
 // import createLogger from 'redux-logger'
 // import thunk from 'redux-thunk'
 //import reducer from './reducers'
 import routes from './routes';
 //import configureStore from './store';
 
-
+console.info("just in")
 
 import configureStore from './store';
 let store = configureStore();
 /*const store = configureStore(
-    reducer
-)
+ reducer
+ )
 
-import { startLesson }  from './actions/student'
-store.dispatch(startLesson(123));*/
+ import { startLesson }  from './actions/student'
+ store.dispatch(startLesson(123));*/
 
 
 // render ->  provider -> router -> store -> reducer
-
 
 
 render(
