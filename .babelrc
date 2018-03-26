@@ -8,8 +8,8 @@
     "transform-decorators-legacy",
     "transform-class-properties",
     "transform-es2015-classes",
-    "react-hot-loader/babel",
-    [
+//    "react-hot-loader/babel",
+  /*  [
       "captains-log",
       {
         "injectScope": true,
@@ -41,6 +41,6 @@
           "app/main.prod.map.js"
         ]
       }
-    ]
+    ]*/
   ]
 }
